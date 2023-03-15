@@ -246,6 +246,10 @@ footer{
     list-style-type: none;
     gap: 1vw;
 }
+::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(171, 90, 251);
+}
 
 @media (max-width: 600px){
     header{
