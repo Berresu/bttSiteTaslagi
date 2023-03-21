@@ -32,14 +32,14 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-header > img{
-    margin-left: 10vw;
+header >h3{
+    margin-left: 50px;
 }
 header > ul{
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    margin-right: 10vw;
+    margin-right: 50px;
 }
 header > ul > li{
     margin: 10px;
@@ -56,7 +56,7 @@ header > ul > li > a:hover{
 header > ul > li > a.secilen{
     background-color: #fff;
     color: black;
-    text-transform: uppercase;
+   
     border-radius: 15px;
     padding: 5px;
     text-decoration: none;
@@ -127,42 +127,6 @@ section > div > img{
     width: 100%;
     height: 100%;
 }
-#meyveler{
-    display: flex;
-}
-
-.kiraz, .mandalina{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    padding:  2vh 8vw;
-    z-index: 1;
-    color: #fff;
-}
-
-.kiraz::before{
-    content: ' ';
-    background: url(imagesBTT/44.jpeg) no-repeat center top/cover ;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.9;
-    z-index: -1;
-}
-.mandalina::before{
-    content: ' ';
-    background: url(imagesBTT/2.jpeg) no-repeat center top/cover ;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    z-index: -2;
-}
 #intro {
     background-color: rgb(116, 54, 164);
     display: flex;
@@ -170,13 +134,13 @@ section > div > img{
     height: auto;
     align-items: center;
     justify-content: flex-end;
-    padding-top: 80px;
+    padding-top: 10px;
     
 }
-#intro > h3{
+header > h3{
     color: #fff;
     font-size: 4rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Airstrike', sans-serif;
     z-index: 100;
 }
 #intro > img{
@@ -224,6 +188,7 @@ section > div > img{
 #galeri > img{
     flex: 1 1 25%;
     max-width: 25vw;
+    height: 200px;
 }
 footer{
     grid-area: footer;
@@ -266,4 +231,60 @@ footer{
     #intro > img{
         width: 80%;
     }
+}
+.menu {
+	position: relative;
+	display:  inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 25px;
+}
+.menu span {
+	margin: 0 auto;
+	position: relative;
+	top: 12px;
+}
+.menu span:before, .menu span:after {
+	position: absolute;
+	content: '';
+}
+.menu span, .menu span:before, .menu span:after {
+	width: 30px;
+	height: 6px;
+	background-color: #ffffff;
+	display: block;
+}
+.menu span:before {
+	margin-top: -12px;
+}
+.menu span:after {
+	margin-top: 12px;
+}
+.example5 span {
+	-webkit-transition-duration: 0s; transition-duration: 0s;
+	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.example5:hover span {
+	background-color: rgba(0,0,0,0.0);
+	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.example5 span:before {
+	-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+	-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+	-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+}
+.example5:hover span:before {
+	margin-top: 0;
+	-webkit-transform: rotate(45deg); transform: rotate(45deg);
+	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+.example5 span:after {
+	-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+	-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+	-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+}
+.example5:hover span:after {
+	margin-top: 0;
+	-webkit-transform: rotate(-45deg); transform: rotate(-45deg);
+	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
 }
