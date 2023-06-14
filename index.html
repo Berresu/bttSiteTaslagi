@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BTT Site Taslağı</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,33 +15,38 @@
 </head>
 <body>
     <header>
-        <h3>BASAKSEHIR TEKNOLOJI TAKIMI</h3>
-        <a href="#" class="menu hareket" id="menujs"><span></span></a>
+        <h3><a href="index.html">BASAKSEHIR TEKNOLOJI TAKIMI</a></h3>
+        <div class="navbar">
+            <div class="burger-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="menu">
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="#">Hedeflerimiz</a></li>
+                <li><a href="#">Projeler</a></li>
+            </ul>
+        </div>
     </header>
     <main>
-        <section id="intro">
-           
-            <img src="imagesBTT/30.jpeg" alt="">
-        </section>
         <section id="yumurta">
             <div class="aciklama">
                 <h4>Hakkımızda</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam soluta ad maiores delectus minus, consectetur unde tempora eos id hic veritatis sint consequuntur. Nobis ipsa natus, tenetur sapiente vero minus!
-                Possimus aut officia exercitationem vitae alias, temporibus quaerat quae fugiat ipsum! Dolorum tenetur dolores autem dolore! Dicta sed vel vero laboriosam doloribus consequuntur, iusto eum necessitatibus corrupti molestias quia voluptatum.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam soluta ad maiores delectus minus, consectetur unde tempora eos id hic veritatis sint consequuntur. Nobis ipsa natus, tenetur sapiente vero minus!</p>
                 <a href="#">Detaylar</a>
             </div>
             <div class="resim">
-                <img src="imagesBTT/58.jpeg">
+                <img src="imagesBTT3/216.JPG">
             </div>
         </section>
         <section id="bardak">
             <div class="resim">
-                <img src="imagesBTT/60.jpeg">
+                <img src="imagesBTT3/217.jpg">
             </div>
             <div class="aciklama">
                 <h4>Hedeflerimiz</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam soluta ad maiores delectus minus, consectetur unde tempora eos id hic veritatis sint consequuntur. Nobis ipsa natus, tenetur sapiente vero minus!
-                Possimus aut officia exercitationem vitae alias, temporibus quaerat quae fugiat ipsum! Dolorum tenetur dolores autem dolore! Dicta sed vel vero laboriosam doloribus consequuntur, iusto eum necessitatibus corrupti molestias quia voluptatum.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam soluta ad maiores delectus minus, consectetur unde tempora eos id hic veritatis sint consequuntur. Nobis ipsa natus, tenetur sapiente vero minus!</p>
                 <a href="#">Detaylar</a>
             </div>
             
@@ -64,21 +70,19 @@
             </div>
         </section>
         <section id="galeri" class="beyaz">
-            <img src="imagesBTT/68.png" alt="">
-            <img src="imagesBTT/69.png" alt="">
-            <img src="imagesBTT/65.jpeg" alt="">
-            <img src="imagesBTT/46.jpeg" alt="">
+            <img src="imagesBTT3/189.JPG" alt="">
+            <img src="imagesBTT3/206.JPG" alt="">
+            <img src="imagesBTT3/166.JPG" alt="">
+            <img src="imagesBTT3/223.jpg" alt="">
         </section>
     </main>
     <footer>
-        <h3>
-        </h3>
         <ul class="altMenu">
-            <li><a href="#">Hakkımızda</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
             <li><a href="#">Projeler</a></li>
         </ul>
         <ul class="sosyalMedya">
-            <li><a href="#"></a></li>
+            <div class="instagram-icon"></div>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
