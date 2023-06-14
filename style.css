@@ -34,33 +34,9 @@ header{
 }
 header >h3{
     margin-left: 50px;
+    margin-right: auto;
 }
-header > ul{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin-right: 50px;
-}
-header > ul > li{
-    margin: 10px;
-}
-header > ul > li > a{
-    color: #fff;
-    font-family: 'Ubuntu', sans-serif;
-    text-decoration: none;
 
-}
-header > ul > li > a:hover{
-    text-decoration: underline;
-}
-header > ul > li > a.secilen{
-    background-color: #fff;
-    color: black;
-   
-    border-radius: 15px;
-    padding: 5px;
-    text-decoration: none;
-}
 main{
     grid-area: main;
     display: flex;
@@ -94,7 +70,7 @@ section > div > img{
     flex-wrap: nowrap;
 }
 .aciklama{
-    background-color: #fff;
+    background-color: #f8f1f1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -232,59 +208,45 @@ footer{
         width: 80%;
     }
 }
-.menu {
-	position: relative;
-	display:  inline-block;
-	width: 30px;
-	height: 30px;
-	margin: 25px;
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(116, 54, 164);
+    padding: 10px;
+    color: #fff;
 }
-.menu span {
-	margin: 0 auto;
-	position: relative;
-	top: 12px;
+.burger-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-bottom: 5px;
 }
-.menu span:before, .menu span:after {
-	position: absolute;
-	content: '';
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 2px 0;
 }
-.menu span, .menu span:before, .menu span:after {
-	width: 30px;
-	height: 6px;
-	background-color: #ffffff;
-	display: block;
+ul {
+    list-style-type: none;
+    display: none;
+    margin-top: 5px;
 }
-.menu span:before {
-	margin-top: -12px;
+li {
+    margin: 1px 0;
 }
-.menu span:after {
-	margin-top: 12px;
+a {
+    color: #fff;
+    text-decoration: none;
 }
-.hareket span {
-	-webkit-transition-duration: 0s; transition-duration: 0s;
-	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+.show {
+    display: block;
 }
-.hareket:hover span {
-	background-color: rgba(0,0,0,0.0);
-	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
-}
-.hareket span:before {
-	-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
-	-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
-	-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
-}
-.hareket:hover span:before {
-	margin-top: 0;
-	-webkit-transform: rotate(45deg); transform: rotate(45deg);
-	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
-}
-.hareket span:after {
-	-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
-	-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
-	-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
-}
-.hareket:hover span:after {
-	margin-top: 0;
-	-webkit-transform: rotate(-45deg); transform: rotate(-45deg);
-	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
-}
+.instagram-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('instagram-icon.png');
+    background-size: cover;
+}  
