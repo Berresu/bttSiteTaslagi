@@ -174,13 +174,18 @@ p{
     padding-bottom: 15px;
 }
 
-h4{
-    font-size: 24px;
+section > h3{
     margin-top: 10px;
     margin-top: 16px;
     align-self: center;
     justify-content: center;
-    padding-left: 40px;
+    padding-left: 60rem;
     padding-right: 25px;
     padding-bottom: 15px;
+    color: rgb(175, 83, 241);
+
+}
+
+main > h4{
+    font-family: 'Airstrike' , sans-serif;
 }
